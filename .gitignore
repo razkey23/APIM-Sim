@@ -1,6 +1,6 @@
 .gitignore
 .vscode
-src/instructions.txt
-src/instructions1.txt
-src/my_sim
-src/help.txt
+/src/instructions.txt
+/src/instructions1.txt
+/src/my_sim
+/src/help.txt
