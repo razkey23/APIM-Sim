@@ -1,0 +1,331 @@
+
+Info: (I703) tracing timescale unit set: 1 ns (trace.vcd)
+
+Warning: (W558) disable() or dont_initialize() called on process with no static sensitivity, it will be orphaned: ibuffer_obj.LDRSR
+In file: /home/razkey23/systemc-2.3.3/src/sysc/kernel/sc_simcontext.cpp:763
+
+Warning: (W558) disable() or dont_initialize() called on process with no static sensitivity, it will be orphaned: rsr_obj.update_state
+In file: /home/razkey23/systemc-2.3.3/src/sysc/kernel/sc_simcontext.cpp:763
+Triggering decode() event at 10 ns
+[Decoder] SETLOOP 4 => loopReg=4
+[Decoder] Found label MYLOOP at 10
+LDCSRIMM decoded at 40 ns
+0 0 1
+0 1 1
+0 2 1
+0 3 1
+0 4 1
+0 5 1
+0 6 1
+0 7 1
+LDCSRIMM decoded at 50 ns
+1 0 1
+1 1 1
+1 2 1
+1 3 1
+1 4 1
+1 5 1
+1 6 1
+1 7 1
+LDRSR decoded at 60 ns
+RSR state updated.
+LDRSR decoded at 70 ns
+RSR state updated.
+RSELRSR decoded at 80 ns
+CSELCSR decoded at 90 ns
+DoA decoded at 100 ns
+Got Into Crossbar Execute
+SH decoded at 150 ns
+Got into SH 150 ns
+SC DONE SH is0160 ns
+Current State at: 170 ns
+16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+ADCV decoded at 170 ns
+Activated at timestamp 170 ns 0 8 0
+SC DONE SH is1180 ns
+ADCV decoded at 190 ns
+Activated at timestamp 190 ns 0 8 1
+SC DONE SH is1200 ns
+ADCV decoded at 210 ns
+Activated at timestamp 210 ns 0 8 2
+SC DONE SH is1220 ns
+ADCV decoded at 230 ns
+Activated at timestamp 230 ns 0 8 3
+IADD decoded at 250 ns
+Execute is triggered at 260 ns
+ Counter is 0
+IADD Data Out is 240
+IADD Data Out is 240
+IADD Data Out is 240
+IADD Data Out is 240
+IADD Data Out is 0
+IADD Data Out is 0
+IADD Data Out is 0
+IADD Data Out is 0
+IADD Data Out is 0
+IADD Data Out is 0
+IADD Data Out is 0
+IADD Data Out is 0
+IADD Data Out is 0
+IADD Data Out is 0
+IADD Data Out is 0
+IADD Data Out is 0
+IADD Data Out is 0
+IADD Data Out is 0
+IADD Data Out is 0
+IADD Data Out is 0
+IADD Data Out is 0
+IADD Data Out is 0
+IADD Data Out is 0
+IADD Data Out is 0
+IADD Data Out is 0
+IADD Data Out is 0
+IADD Data Out is 0
+IADD Data Out is 0
+IADD Data Out is 0
+IADD Data Out is 0
+IADD Data Out is 0
+IADD Data Out is 0
+[Decoder] DEC => loopReg=3
+[Decoder] BNE MYLOOP => loopReg=3
+[Decoder] Found label MYLOOP at 10
+LDCSRIMM decoded at 290 ns
+0 0 1
+0 1 1
+0 2 1
+0 3 1
+0 4 1
+0 5 1
+0 6 1
+0 7 1
+LDCSRIMM decoded at 300 ns
+1 0 1
+1 1 1
+1 2 1
+1 3 1
+1 4 1
+1 5 1
+1 6 1
+1 7 1
+LDRSR decoded at 310 ns
+RSR state updated.
+LDRSR decoded at 320 ns
+RSR state updated.
+RSELRSR decoded at 330 ns
+CSELCSR decoded at 340 ns
+DoA decoded at 350 ns
+Got Into Crossbar Execute
+SH decoded at 400 ns
+SC DONE SH is0410 ns
+Current State at: 420 ns
+16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+ADCV decoded at 420 ns
+Activated at timestamp 420 ns 0 8 0
+SC DONE SH is1430 ns
+ADCV decoded at 440 ns
+Activated at timestamp 440 ns 0 8 1
+SC DONE SH is1450 ns
+ADCV decoded at 460 ns
+Activated at timestamp 460 ns 0 8 2
+SC DONE SH is1470 ns
+ADCV decoded at 480 ns
+Activated at timestamp 480 ns 0 8 3
+IADD decoded at 500 ns
+Execute is triggered at 510 ns
+ Counter is 1
+IADD Data Out is 720
+IADD Data Out is 720
+IADD Data Out is 720
+IADD Data Out is 720
+IADD Data Out is 0
+IADD Data Out is 0
+IADD Data Out is 0
+IADD Data Out is 0
+IADD Data Out is 0
+IADD Data Out is 0
+IADD Data Out is 0
+IADD Data Out is 0
+IADD Data Out is 0
+IADD Data Out is 0
+IADD Data Out is 0
+IADD Data Out is 0
+IADD Data Out is 0
+IADD Data Out is 0
+IADD Data Out is 0
+IADD Data Out is 0
+IADD Data Out is 0
+IADD Data Out is 0
+IADD Data Out is 0
+IADD Data Out is 0
+IADD Data Out is 0
+IADD Data Out is 0
+IADD Data Out is 0
+IADD Data Out is 0
+IADD Data Out is 0
+IADD Data Out is 0
+IADD Data Out is 0
+IADD Data Out is 0
+[Decoder] DEC => loopReg=2
+[Decoder] BNE MYLOOP => loopReg=2
+[Decoder] Found label MYLOOP at 10
+LDCSRIMM decoded at 540 ns
+0 0 1
+0 1 1
+0 2 1
+0 3 1
+0 4 1
+0 5 1
+0 6 1
+0 7 1
+LDCSRIMM decoded at 550 ns
+1 0 1
+1 1 1
+1 2 1
+1 3 1
+1 4 1
+1 5 1
+1 6 1
+1 7 1
+LDRSR decoded at 560 ns
+RSR state updated.
+LDRSR decoded at 570 ns
+RSR state updated.
+RSELRSR decoded at 580 ns
+CSELCSR decoded at 590 ns
+DoA decoded at 600 ns
+Got Into Crossbar Execute
+SH decoded at 650 ns
+SC DONE SH is0660 ns
+Current State at: 670 ns
+16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+ADCV decoded at 670 ns
+Activated at timestamp 670 ns 0 8 0
+SC DONE SH is1680 ns
+ADCV decoded at 690 ns
+Activated at timestamp 690 ns 0 8 1
+SC DONE SH is1700 ns
+ADCV decoded at 710 ns
+Activated at timestamp 710 ns 0 8 2
+SC DONE SH is1720 ns
+ADCV decoded at 730 ns
+Activated at timestamp 730 ns 0 8 3
+IADD decoded at 750 ns
+Execute is triggered at 760 ns
+ Counter is 2
+IADD Data Out is 1680
+IADD Data Out is 1680
+IADD Data Out is 1680
+IADD Data Out is 1680
+IADD Data Out is 0
+IADD Data Out is 0
+IADD Data Out is 0
+IADD Data Out is 0
+IADD Data Out is 0
+IADD Data Out is 0
+IADD Data Out is 0
+IADD Data Out is 0
+IADD Data Out is 0
+IADD Data Out is 0
+IADD Data Out is 0
+IADD Data Out is 0
+IADD Data Out is 0
+IADD Data Out is 0
+IADD Data Out is 0
+IADD Data Out is 0
+IADD Data Out is 0
+IADD Data Out is 0
+IADD Data Out is 0
+IADD Data Out is 0
+IADD Data Out is 0
+IADD Data Out is 0
+IADD Data Out is 0
+IADD Data Out is 0
+IADD Data Out is 0
+IADD Data Out is 0
+IADD Data Out is 0
+IADD Data Out is 0
+[Decoder] DEC => loopReg=1
+[Decoder] BNE MYLOOP => loopReg=1
+[Decoder] Found label MYLOOP at 10
+LDCSRIMM decoded at 790 ns
+0 0 1
+0 1 1
+0 2 1
+0 3 1
+0 4 1
+0 5 1
+0 6 1
+0 7 1
+LDCSRIMM decoded at 800 ns
+1 0 1
+1 1 1
+1 2 1
+1 3 1
+1 4 1
+1 5 1
+1 6 1
+1 7 1
+LDRSR decoded at 810 ns
+RSR state updated.
+LDRSR decoded at 820 ns
+RSR state updated.
+RSELRSR decoded at 830 ns
+CSELCSR decoded at 840 ns
+DoA decoded at 850 ns
+Got Into Crossbar Execute
+SH decoded at 900 ns
+SC DONE SH is0910 ns
+Current State at: 920 ns
+16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+ADCV decoded at 920 ns
+Activated at timestamp 920 ns 0 8 0
+SC DONE SH is1930 ns
+ADCV decoded at 940 ns
+Activated at timestamp 940 ns 0 8 1
+SC DONE SH is1950 ns
+ADCV decoded at 960 ns
+Activated at timestamp 960 ns 0 8 2
+SC DONE SH is1970 ns
+ADCV decoded at 980 ns
+Activated at timestamp 980 ns 0 8 3
+IADD decoded at 1 us
+Execute is triggered at 1010 ns
+ Counter is 3
+IADD Data Out is 3600
+IADD Data Out is 3600
+IADD Data Out is 3600
+IADD Data Out is 3600
+IADD Data Out is 0
+IADD Data Out is 0
+IADD Data Out is 0
+IADD Data Out is 0
+IADD Data Out is 0
+IADD Data Out is 0
+IADD Data Out is 0
+IADD Data Out is 0
+IADD Data Out is 0
+IADD Data Out is 0
+IADD Data Out is 0
+IADD Data Out is 0
+IADD Data Out is 0
+IADD Data Out is 0
+IADD Data Out is 0
+IADD Data Out is 0
+IADD Data Out is 0
+IADD Data Out is 0
+IADD Data Out is 0
+IADD Data Out is 0
+IADD Data Out is 0
+IADD Data Out is 0
+IADD Data Out is 0
+IADD Data Out is 0
+IADD Data Out is 0
+IADD Data Out is 0
+IADD Data Out is 0
+IADD Data Out is 0
+[Decoder] DEC => loopReg=0
+[Decoder] BNE MYLOOP => loopReg=0
+ST decoded at 1030 ns
+OReg State Updated
+3600 3600 3600 3600 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -805425040 21901 1 0 0 16843009 16843009 16843009 16843009 16843009 16843009 16843009 16843009 16843009 16843009 16843009 16843009 16843009 16843009 16843009 16843009 16843009 16843009 16843009 16843009 16843009 16843009 16843009 16843009 16843009 16843009 16843009 16843009 16843009 16843009 0 -805424912 21901 -805424696 21901 -805424632 21901 0 0 0 0 0 0 0 0 0 0 0 0 0 0 457309120 32766 15 0 1868849008 1667196270 1936945010 7496034 0 0 8969216 21902 8969856 21902 0 0 0 0 615 0 457390984 32766 0 0 9050416 21902 257 0 0 0 9114128 21902 0 0 0 0 -805424912 21901 
+Simulation finished at: 1510 ns

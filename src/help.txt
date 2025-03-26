@@ -1,0 +1,1 @@
+g++ -std=c++11 -I$SYSTEMC_HOME/include -L$SYSTEMC_HOME/lib Top.cpp Decoder.cpp OReg.cpp Adder.cpp Crossbar.cpp IBuffer.cpp Csr.cpp Adc.cpp Sh.cpp Rsr.cpp -o my_sim -lsystemc -lm
