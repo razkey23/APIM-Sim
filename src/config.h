@@ -11,12 +11,11 @@
 #define MAX_ROW_ACTIVATION 16 // Maximum number of rows that can be activated at a time, may be not used in first simulation
 #define ADC_COLUMN_SHARING 4  // 4 columns share an ADC
 #define INPUT_PRECISION 4  //  Precision of Input
-#define WEIGHT_PRECISION 4 // Precision of Weights
+#define WEIGHT_PRECISION 8 // Precision of Weights
 #define ADC_SHARING_FACTOR 4 // 4 Columns share an ADC
 #define ADC_GROUPS NCOLS/ADC_SHARING_FACTOR
-#define ROWS_PER_GROUP NROWS/NROW_GROUPS
-#define COLUMNS_PER_GROUP NCOLS/NCOL_GROUPS
-#define WEIGHT_PRECISION 4 // Weight Precision
+#define ROWS_PER_GROUP 8
+#define COLUMNS_PER_GROUP 8
 
 
 #endif

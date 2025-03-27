@@ -1,9 +1,12 @@
 #include "Crossbar.h"
 #include <iomanip>
+#include <sstream>
+#include <fstream>
 
 Crossbar::Crossbar(sc_module_name nm) : sc_module(nm) ,p_done_crossbar(0) {
     
-    for(int i = 0; i < NROW_GROUPS; i++) {
+    
+    /*for(int i = 0; i < NROW_GROUPS; i++) {
         for(int j = 0; j < ROWS_PER_GROUP; j++) {
             for(int k = 0; k < NCOL_GROUPS; k++) {
                 for(int l = 0; l < COLUMNS_PER_GROUP; l++) {
@@ -16,14 +19,44 @@ Crossbar::Crossbar(sc_module_name nm) : sc_module(nm) ,p_done_crossbar(0) {
                 }
             }
         }
-    }
-
+    }*/
+    // INIT
+    initArray();
     SC_THREAD(execute);
     sensitive<<p_DoA.pos();
     dont_initialize();
 }
 
+void Crossbar::initArray() {
+    std::ifstream mfile("/home/razkey23/playground/acimsim/tests/functional_sim/out_matrix_bits.txt");
+    if(!mfile.is_open()) {
+        std::cerr << "[Crossbar] ERROR: Could not open matrix_bits.txt.\n";
+        SC_REPORT_FATAL("Crossbar", "Unable to open matrix bits file");
+    }
+    for (int row=0; row < NROWS;row++){
+        int i = row / ROWS_PER_GROUP;
+        int j = row % ROWS_PER_GROUP;
 
+        std::string line;
+        if(!std::getline(mfile, line)) {
+            std::cerr << "[Crossbar] ERROR: Not enough lines in matrix_bits.txt.\n";
+             SC_REPORT_FATAL("Crossbar", "Matrix file mismatch");
+        }
+        std::stringstream ss(line);
+        for(int col = 0; col < NCOLS; col++) {
+            int bit_val;
+            if(!(ss >> bit_val)) {
+                std::cerr << "[Crossbar] ERROR: Missing bit at row " << row
+                          << ", col " << col << " in matrix_bits.txt.\n";
+                SC_REPORT_FATAL("Crossbar", "Matrix file mismatch");
+            }
+            int k = col / COLUMNS_PER_GROUP;
+            int l = col % COLUMNS_PER_GROUP;
+            memory[i][j][k][l] = bit_val;
+        }
+    }
+    mfile.close(); 
+}
 
 Crossbar::~Crossbar(){
     

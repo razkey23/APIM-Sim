@@ -24,6 +24,7 @@ class Crossbar : public sc_module {
 
         Crossbar(sc_module_name nm);
         ~Crossbar();
+        void initArray();
         SC_HAS_PROCESS(Crossbar);
         friend class Decoder;
 
